@@ -1,0 +1,135 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 20px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(#e66465, #9198e5);
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.searchBar {
+    position: relative;
+}
+
+.texSearchBar {
+    width: 400px;
+    height: 25px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+    width: 20px;
+    height: 20px;
+}
+
+.login {
+    color: white;
+}
+
+.register {
+    color: white;
+}
+
+.header3 {
+    display: flex;
+    align-items: center;
+}
+
+.thongBao {
+    padding-right: 5px;
+}
+
+.main {
+    padding: 0 145px;
+}
+
+.tabName {
+    color: #320AC2;
+    font-size: 20px;
+}
+
+.whitespace {
+    margin-bottom: 200px;
+}
+
+.mainpic {
+    max-height: 1px;
+}
+
+.sizeImg {
+    width: 400px;
+}
+
+.coverImg {
+    width: 180px;
+    border-radius: 3px;
+}
+
+.nameTruyen {
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    max-width: 185px;
+    -webkit-line-clamp: 2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.truyenItem {
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.topItem {
+    display: flex;
+    border-bottom: 1px black solid;
+}
+
+.topNumber {
+    font-size: 20px;
+}
+
+.topHotImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.topName {
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 110px;
+}
+
+.topChapter {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.topBackgr {
+    background: #CECECE;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding: 0 2px;
+        background-color: aqua;
+    }
+}
