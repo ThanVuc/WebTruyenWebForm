@@ -105,6 +105,7 @@
     <Content Include="About.aspx" />
     <Content Include="Css\AuthorViewCss\Author.css" />
     <Content Include="Css\DetailCss\Detail.css" />
+    <Content Include="Icon\1.txt" />
     <Content Include="Image\LogoImg\1.txt" />
     <Content Include="Image\StoryImg\anhdaidien.jpg" />
     <Content Include="AuthorView\1.txt" />
