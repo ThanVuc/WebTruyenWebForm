@@ -104,6 +104,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Start\anhdaidien.jpg" />
+    <Content Include="AuthorView\1.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -124,6 +125,7 @@
     <Content Include="Content\home.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DetailView\1.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="UserView\HomePage.aspx" />
