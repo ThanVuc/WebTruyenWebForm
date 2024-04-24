@@ -103,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Css\AuthorViewCss\Author.css" />
+    <Content Include="Css\DetailCss\Detail.css" />
+    <Content Include="Image\LogoImg\1.txt" />
     <Content Include="Image\StoryImg\anhdaidien.jpg" />
     <Content Include="AuthorView\1.txt" />
     <Content Include="Contact.aspx" />
@@ -266,10 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Css\AuthorViewCss\" />
-    <Folder Include="Css\DetailCss\" />
     <Folder Include="Css\UserViewCss\" />
-    <Folder Include="Image\LogoImg\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
