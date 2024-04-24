@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Start\anhdaidien.jpg" />
+    <Content Include="Image\StoryImg\anhdaidien.jpg" />
     <Content Include="AuthorView\1.txt" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -122,7 +122,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\home.css" />
+    <Content Include="Css\UserCss\home.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DetailView\1.txt" />
@@ -266,6 +266,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Css\AuthorViewCss\" />
+    <Folder Include="Css\DetailCss\" />
+    <Folder Include="Css\UserViewCss\" />
+    <Folder Include="Image\LogoImg\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

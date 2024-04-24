@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="WebTruyen.HomePage" %>
 
+<asp:Content ID="HeadContent" ContentPlaceHolderID="head" runat="server">
+    <link href="../Css/UserCss/home.css" rel="stylesheet" />
+</asp:Content>
+
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main>
@@ -20,7 +25,7 @@
                 </p>
                 <div class="row">
                     <div class="ms-2 col-3 mb-4 TruyenItem">
-                        <img src="#" / class="coverImg">
+                        <img src="../Image/StoryImg/anhdaidien.jpg" / class="coverImg">
                         <p class="nameTruyen">
                             Tên chuyện Tên chuyện Tên chuyện Tên chuyện Tên chuyện
                         </p>
@@ -34,7 +39,7 @@
                     <p class="topNumber">
                         1.
                     </p>
-                    <img src="#" class="topHotImg" alt=""\>
+                    <img src="../Image/StoryImg/anhdaidien.jpg" class="topHotImg" alt=""\>
                     <div>
                         <p class="topName">nameTruyen</p>
                         <p class="topChapter">chapter</p>
