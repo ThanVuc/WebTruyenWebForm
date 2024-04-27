@@ -24,7 +24,8 @@
 
 </head>
 <body>
-        <header class="header">
+        <header >
+<div class="header">
 <img src="#" class="logo" alt="Logo" />
 <div class="searchBar">
     <input type="text" class="texSearchBar" />
@@ -35,7 +36,8 @@
     <p style="color: white;margin: 0 5px;"> / </p>
     <a href="#" class="register">Register</a>
 </div>
-
+</div>
+    <a href="User/Login.aspx" >Type</a>
 </header>
     <form runat="server">
         <asp:ScriptManager runat="server">
