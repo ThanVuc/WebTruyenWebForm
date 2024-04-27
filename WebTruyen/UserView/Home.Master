@@ -28,16 +28,30 @@
 <div class="header">
 <img src="#" class="logo" alt="Logo" />
 <div class="searchBar">
-    <input type="text" class="texSearchBar" />
-    <img src="#" class="searchIcon" />
+    <formview>
+        <input type="text" class="texSearchBar" />
+        <img src="#" class="searchIcon" />
+    </formview> 
 </div>
+
 <div class="header3">
-    <a href="#" class="login">Login</a>
-    <p style="color: white;margin: 0 5px;"> / </p>
-    <a href="#" class="register">Register</a>
+    <a href="/login" runat="server" id="logout" ></a>
+    <a href="/login" class="login me-2" runat="server" id="login" ></a>
+    <a href="/register" class="register" runat="server" id="register" ></a>
 </div>
 </div>
-    <a href="User/Login.aspx" >Type</a>
+   <ul class="nav nav-tabs justify-content-center coller ">    
+   <li class="nav-item">
+     <a class="nav-link" href="/">Home</a>
+   </li>
+   
+   <li class="nav-item">
+     <a class="nav-link" href="/Type">Tìm Truyện</a>
+   </li>
+                   <li class="nav-item">
+  <a class="nav-link" href="/ListStory">Danh Sách</a>
+</li>
+</ul>
 </header>
     <form runat="server">
         <asp:ScriptManager runat="server">

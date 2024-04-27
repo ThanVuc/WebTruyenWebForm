@@ -11,6 +11,15 @@ namespace WebTruyen
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int logged = Convert.ToInt32(Session["logged"]);
+            if (logged == 0)
+            {
+                register.InnerText = "Register";
+                login.InnerText = "Login";
+            } else
+            {
+                logout.InnerText = "Logout";
+            }
 
         }
     }

@@ -13,17 +13,32 @@ namespace WebTruyen.User
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["logged"] != null)
+            {
+                Session.Remove("logged");
+                Session.Add("logged", 0);
+            } else
+            {
+                Session.Add("logged", 0);
+            }
         }
 
         protected void Submit_Click(object sender, EventArgs e)
         {
             var user = Request.Form["user"];
             var password = Request.Form["password"];
-            lb1.InnerText = user + password + "asjdh";
-            if (user == "abcxyz" && password == "123")
+            _Connection cnt = new _Connection();
+            cnt.Cmd.CommandText = "Select * from StoryUser Where UserName = @username and UserPassword = @userpassword";
+            cnt.Cmd.Parameters.AddWithValue("@username",user);
+            cnt.Cmd.Parameters.AddWithValue("@userpassword", password);
+            var flag = cnt.Cmd.ExecuteScalar();
+            if (flag != null)
             {
+                Session.Add("logged",1);
                 Response.Redirect("/");
+            } else
+            {
+                err.InnerText = "Tên Đăng Nhập hoặt Mật Khẩu không chính xác";
             }
         }
     }

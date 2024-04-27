@@ -3,10 +3,9 @@
 <asp:Content ID="AddChapter" runat="server" ContentPlaceHolderID="AuthorContent">
     <main>
 
-    <div class="display-2 ms-2">Chương Mới</div>
-
     <formview>
-        <div class="container-fluid">
+        <h2>Thêm Chương: </h2>
+         <div class="container-fluid">
             <div class="mb-3 mt-3" for="" >
                 <label for="title" class="form-label">Tiêu Đề Chương: </label>
                 <input class="form-control" id="title" name="title" />

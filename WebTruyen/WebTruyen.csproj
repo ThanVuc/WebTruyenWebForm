@@ -104,10 +104,13 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AuthorView\AddChapter.aspx" />
+    <Content Include="AuthorView\Edit.aspx" />
+    <Content Include="AuthorView\ListChapter.aspx" />
     <Content Include="AuthorView\Uploaded.aspx" />
     <Content Include="AuthorView\AddNew.aspx" />
     <Content Include="Css\AuthorViewCss\Author.css" />
     <Content Include="Css\DetailCss\Detail.css" />
+    <Content Include="DetailView\content.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Icon\1.txt" />
     <Content Include="Image\LogoImg\1.txt" />
@@ -135,7 +138,6 @@
     <Content Include="DetailView\1.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="UserView\HomePage.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -192,10 +194,13 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Home.Master" />
+    <Content Include="UserView\Home.Master" />
+    <Content Include="UserView\HomePage.aspx" />
+    <Content Include="UserView\TypeOfStory.aspx" />
+    <Content Include="UserView\ListStory.aspx" />
     <Content Include="User\login.css" />
     <Content Include="User\Login.aspx" />
-    <Content Include="User\WebForm1.aspx" />
+    <Content Include="User\Register.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -225,6 +230,20 @@
     <Compile Include="AuthorView\Author.Master.designer.cs">
       <DependentUpon>Author.Master</DependentUpon>
     </Compile>
+    <Compile Include="AuthorView\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthorView\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorView\ListChapter.aspx.cs">
+      <DependentUpon>ListChapter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthorView\ListChapter.aspx.designer.cs">
+      <DependentUpon>ListChapter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AuthorView\Uploaded.aspx.cs">
       <DependentUpon>Uploaded.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,6 +272,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DetailView\content.aspx.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -263,19 +289,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="UserView\HomePage.aspx.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserView\HomePage.aspx.designer.cs">
-      <DependentUpon>HomePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Home.Master.cs">
+    <Compile Include="UserView\Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.Master.designer.cs">
+    <Compile Include="UserView\Home.Master.designer.cs">
       <DependentUpon>Home.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
@@ -285,6 +304,27 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="UserView\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\TypeOfStory.aspx.cs">
+      <DependentUpon>TypeOfStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\TypeOfStory.aspx.designer.cs">
+      <DependentUpon>TypeOfStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\ListStory.aspx.cs">
+      <DependentUpon>ListStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\ListStory.aspx.designer.cs">
+      <DependentUpon>ListStory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -292,12 +332,12 @@
     <Compile Include="User\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="User\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="User\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -306,6 +346,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="_Connection.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

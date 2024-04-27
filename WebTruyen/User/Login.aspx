@@ -12,6 +12,7 @@
     <div class="container" runat="server">
         <div class="wrapper" runat="server">
             <form id="form1" runat="server" method="post">
+                <label id="err" runat="server" style="color: brown" ></label>
                 <h1>Login</h1>
                 <div class="input-box">
                     <input id="user" runat="server" type="text" name="user" placeholder="Username" required />
@@ -21,13 +22,10 @@
                     <input id="password" runat="server" type="password" name="password" placeholder="Password" required/>
                     <i class='bx bxs-lock-alt' ></i>
                 </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox" />Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
                 <asp:Button CssClass="btn" runat="server" Text="Login" OnClick="Submit_Click" />
                 <div class="register-link">
-                    <p>Don't have an account?<a href="#">Register</a></p>
+                    <p>Don't have an account?<a href="/register">Register</a></p>
+                    <p>Go To Home Without Account <a href="../UserView/HomePage.aspx">Home</a></p>
                 </div>
             </form>
             <label id="lb1" runat="server" ></label>

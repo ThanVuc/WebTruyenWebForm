@@ -7,38 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebTruyen.AuthorView
+namespace WebTruyen.User
 {
 
 
-    public partial class FormUpChapter
+    public partial class Register
     {
 
         /// <summary>
-        /// lb1 control.
+        /// err control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lb1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl err;
 
         /// <summary>
-        /// Grid_Uploaded control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Grid_Uploaded;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lb31 control.
+        /// btn_Register control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lb31;
+        protected global::System.Web.UI.WebControls.Button btn_Register;
     }
 }

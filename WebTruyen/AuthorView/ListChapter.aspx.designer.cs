@@ -11,7 +11,7 @@ namespace WebTruyen.AuthorView
 {
 
 
-    public partial class FormUpChapter
+    public partial class ListChapter
     {
 
         /// <summary>
@@ -24,21 +24,30 @@ namespace WebTruyen.AuthorView
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lb1;
 
         /// <summary>
-        /// Grid_Uploaded control.
+        /// Grid_Chapter control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Grid_Uploaded;
+        protected global::System.Web.UI.WebControls.GridView Grid_Chapter;
 
         /// <summary>
-        /// lb31 control.
+        /// chapterNum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lb31;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl chapterNum;
+
+        /// <summary>
+        /// btn_delete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_delete;
     }
 }
