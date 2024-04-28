@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="content.aspx.cs" Inherits="WebTruyen.DetailView.content" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Content.aspx.cs" Inherits="WebTruyen.DetailView.content" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,36 +89,6 @@
 
     <div class="content">
         <p>Đại Hoang kiếm môn đệ tử Cố Cửu Thanh trong giấc mộng, hắn mộng thấy chính mình trở thành thế giới võ cấp cao 1 vị lão sư.</p>
-
-        <p>Trong lúc vô tình hắn phát hiện, thế giới võ cấp cao học sinh đạt được hắn chỉ điểm tu luyện có thành tựu về sau, liền có thể trả lại cho Cố Cửu Thanh chính mình!</p>
-
-        <p>Thế giới võ cấp cao, 1 vị Võ Tổ ra đời.</p>
-
-        <p>"Cao võ nguyên niên, Võ Tổ truyền xuống Long Tượng Công, Long Tượng Công trở thành liên bang bộ thứ nhất tập thể dục theo đài."</p>
-
-        <p>"Đồng niên, Võ Tổ sáng lập kiếm đạo, truyền xuống Trảm Thiên Bạt Kiếm Thuật!"</p>
-
-        <p>"Cao võ 3 năm, Võ Tổ truyền xuống Đại Hoang Vu Kiếm Quyết!"</p>
-
-        <p>"Cao võ năm thứ mười, liên bang đệ nhất cường giả bạch nhật phi thăng!"</p>
-
-        <p>...</p>
-
-        <p>Cố Cửu Thanh chậm rãi mở mắt ra, ở trong cơ thể hắn, hội tụ 4 tỷ võ giả Long Tượng Công lực lượng, tuỳ tiện ở giữa liền có thể xé rách hư không.</p>
-
-        <p>Hội tụ hơn trăm triệu kiếm đạo học sinh đối rút kiếm thuật tu vi, chỉ là tiết lộ ra ngoài một tia kiếm khí liền có thể chặt đứt càn khôn.</p>
-
-        <p>Bên ngoài tẩm cung, Đại Hoang kiếm môn chưởng giáo rất cung kính đứng thẳng.</p>
-
-        <p>"Đệ tử cầu kiến thái thượng trưởng lão, Đại Hoang dã thần tràn lan, còn xin thái thượng cầm kiếm quét sạch chư thần!"</p>
-
-        <p>Dã thần tràn lan?</p>
-
-        <p>Cố Cửu Thanh nhìn xem cao võ hành tinh xanh, đó là từng tôn tu luyện thành thần người, không khỏi nghi ngờ.</p>
-
-        <p>Cao võ ức vạn thần minh, cái kia tựa hồ càng thêm tràn lan a.</p>
-
-        <p>Mà hắn càng là trở thành một tôn Tổ Thần!</p>
     </div>
 
     <div class="footer">

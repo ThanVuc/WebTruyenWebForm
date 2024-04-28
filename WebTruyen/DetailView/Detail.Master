@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Detail.master.cs" Inherits="WebTruyen.DetailView.Detail" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/DetailCss/Introduction.css" />
+    <link rel="stylesheet" href="../Css/DetailCss/Comment.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../Css/DetailCss/Detail.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../Css/UserCss/home.css" />
+
+</head>
+<body>
+        <header >
+<div class="header">
+<img src="#" class="logo" alt="Logo" />
+<div class="searchBar">
+    <formview>
+        <input type="text" class="texSearchBar" />
+        <img src="#" class="searchIcon" />
+    </formview> 
+</div>
+
+<div class="header3">
+    <a href="/login" runat="server" id="logout" ></a>
+    <a href="/login" class="login me-2" runat="server" id="login" ></a>
+    <a href="/register" class="register" runat="server" id="register" ></a>
+</div>
+</div>
+   <ul class="nav nav-tabs justify-content-center coller ">    
+   <li class="nav-item">
+     <a class="nav-link" href="/">Home</a>
+   </li>
+   
+   <li class="nav-item">
+     <a class="nav-link" href="/Type">Tìm Truyện</a>
+   </li>
+                   <li class="nav-item">
+  <a class="nav-link" href="/ListStory">Danh Sách</a>
+</li>
+</ul>
+</header>
+        <div>
+            <div class="slide">
+        <div class="content">
+            <div class="tren container">
+                <div class="left">
+                    <img src="./Image/1692414723908.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="tieude">
+                        <a1 href="#">Thần Thoại Kỷ Nguyên, Ta Tiến Hóa Thành Hằng Tinh Cấp Cự Thú</a1>
+                    </div>
+                    <br>
+                    <a href="#">Quần Ngọc Sơn Đầu Kiếm</a>
+                    <a href="#">Đang Ra</a>
+                    <a href="#">Huyền Huyễn</a>
+                    <a href="#">Điềm Đạm</a>
+                    <a href="#">TXuyên Qua</a>
+                    <br>
+
+                    <br>
+                    <div class="chu">
+                        <div class="chutren">
+                            <p>1807 </p>
+                            <p> 2 </p>
+                            <p> 1.1M </p>
+                            <p> 3002</p>
+                        </div>
+                        <div class="chuduoi">
+                            <p>Chương </p>
+                            <p> Chương/tuần </p>
+                            <p> Lượt đọc </p>
+                            <p> Cất giữ</p>
+
+                        </div>
+
+                    </div>
+                    <div class="danhgia">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+
+                        4.86/5 (44 đánh giá)
+                    </div>
+                    <br>
+                    <div class="doctruyen">
+           
+                        <a href="#" >
+                            Đọc Truyện
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="cmt">
+                        <a href="#">Giới Thiệu</a>
+                        <a href="#">Danh Sách Chương</a>
+                        <a href="#">Bình Luận</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot">
+        <asp:ContentPlaceHolder ID="DetailMaster" runat="server"></asp:ContentPlaceHolder>
+    </div>         
+        </div>
+</body>
+</html>

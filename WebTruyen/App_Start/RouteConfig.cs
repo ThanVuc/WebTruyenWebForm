@@ -15,9 +15,17 @@ namespace WebTruyen
             routes.EnableFriendlyUrls(settings);
             routes.MapPageRoute("Login", "login", "~/User/Login.aspx");
             routes.MapPageRoute("_Register", "register", "~/User/Register.aspx");
+
             routes.MapPageRoute("Index", "", "~/UserView/HomePage.aspx");
             routes.MapPageRoute("TypeOfStory", "Type", "~/UserView/TypeOfStory.aspx");
             routes.MapPageRoute("ListStory", "ListStory", "~/UserView/ListStory.aspx");
+
+            routes.MapPageRoute("Content","detail/content/{id}","~/DetailView/Content.aspx");
+            routes.MapPageRoute("Comment", "detail/comment/{id}", "~/DetailView/Comment.aspx");
+            routes.MapPageRoute("Introduction", "detail/introduction/{id}", "~/DetailView/Introduction.aspx");
+            routes.MapPageRoute("Listchapter", "detail/listchapter/{id}", "~/DetailView/ListChapter.aspx");
+
+
 
             routes.MapPageRoute("AddNew", "author/addnew", "~/AuthorView/AddNew.aspx");
             routes.MapPageRoute("Uploaded", "author/uploaded", "~/AuthorView/Uploaded.aspx");

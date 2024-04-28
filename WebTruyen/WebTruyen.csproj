@@ -109,8 +109,13 @@
     <Content Include="AuthorView\Uploaded.aspx" />
     <Content Include="AuthorView\AddNew.aspx" />
     <Content Include="Css\AuthorViewCss\Author.css" />
+    <Content Include="Css\DetailCss\Comment.css" />
     <Content Include="Css\DetailCss\Detail.css" />
-    <Content Include="DetailView\content.aspx" />
+    <Content Include="Css\DetailCss\Introduction.css" />
+    <Content Include="DetailView\Comment.aspx" />
+    <Content Include="DetailView\Content.aspx" />
+    <Content Include="DetailView\Introduction.aspx" />
+    <Content Include="DetailView\ListChapter.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Icon\1.txt" />
     <Content Include="Image\LogoImg\1.txt" />
@@ -135,7 +140,6 @@
     <Content Include="Css\UserCss\home.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="DetailView\1.txt" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -167,6 +171,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="AuthorView\Author.Master" />
+    <Content Include="DetailView\Detail.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -272,12 +277,40 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DetailView\content.aspx.cs">
-      <DependentUpon>content.aspx</DependentUpon>
+    <Compile Include="DetailView\Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DetailView\content.aspx.designer.cs">
-      <DependentUpon>content.aspx</DependentUpon>
+    <Compile Include="DetailView\Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\Detail.Master.cs">
+      <DependentUpon>Detail.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\Detail.Master.designer.cs">
+      <DependentUpon>Detail.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\ListChapter.aspx.cs">
+      <DependentUpon>ListChapter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\ListChapter.aspx.designer.cs">
+      <DependentUpon>ListChapter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
