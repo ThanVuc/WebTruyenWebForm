@@ -31,10 +31,19 @@ namespace WebTruyen.User
             cnt.Cmd.CommandText = "Select * from StoryUser Where UserName = @username and UserPassword = @userpassword";
             cnt.Cmd.Parameters.AddWithValue("@username",user);
             cnt.Cmd.Parameters.AddWithValue("@userpassword", password);
-            var flag = cnt.Cmd.ExecuteScalar();
-            if (flag != null)
+            var reader = cnt.Cmd.ExecuteReader();
+            int? userID = null;
+            
+            while(reader.Read())
+                userID = Convert.ToInt32(reader["UserID"]);
+  
+            if (userID != null)
             {
+                // Session: Logged -> Khi nào Session["logged"] == 1 thì đã được đăng nhập, ==0 thì chưa
+                // Session: userID -> Khi nào đã được đăng nhập, thì Session["userID"] sẽ chứa
+                //giá trị của user đang sử dụng
                 Session.Add("logged",1);
+                Session.Add("userID",userID);
                 Response.Redirect("/");
             } else
             {
