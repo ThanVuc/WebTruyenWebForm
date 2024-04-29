@@ -142,6 +142,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Image\StoryImg\son-ha-giam.jpg" />
+    <Content Include="Image\StoryImg\ta-vo-dich-luc-nao.jpg" />
+    <Content Include="Image\StoryImg\trich-tien.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -201,8 +204,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="UserView\Home.Master" />
     <Content Include="UserView\HomePage.aspx" />
-    <Content Include="UserView\TypeOfStory.aspx" />
     <Content Include="UserView\ListStory.aspx" />
+    <Content Include="UserView\TypeOfStory.aspx" />
     <Content Include="User\login.css" />
     <Content Include="User\Login.aspx" />
     <Content Include="User\Register.aspx" />
@@ -344,19 +347,19 @@
     <Compile Include="UserView\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserView\TypeOfStory.aspx.cs">
-      <DependentUpon>TypeOfStory.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserView\TypeOfStory.aspx.designer.cs">
-      <DependentUpon>TypeOfStory.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UserView\ListStory.aspx.cs">
       <DependentUpon>ListStory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserView\ListStory.aspx.designer.cs">
       <DependentUpon>ListStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\TypeOfStory.aspx.cs">
+      <DependentUpon>TypeOfStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\TypeOfStory.aspx.designer.cs">
+      <DependentUpon>TypeOfStory.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

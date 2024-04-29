@@ -25,7 +25,7 @@
                 <asp:Button CssClass="btn" runat="server" Text="Login" OnClick="Submit_Click" />
                 <div class="register-link">
                     <p>Don't have an account?<a href="/register">Register</a></p>
-                    <p>Go To Home Without Account <a href="../UserView/HomePage.aspx">Home</a></p>
+                    <p>Go To Home Without Account <a href="/">Home</a></p>
                 </div>
             </form>
             <label id="lb1" runat="server" ></label>

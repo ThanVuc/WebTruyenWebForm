@@ -11,7 +11,7 @@
                     <p><strong>Chương</strong></p>
                 </HeaderTemplate>
                 <ItemTemplate>
-                    <div class="d-flex flex-row justify-content-between bg-black bg-opacity-25 m-2 rounded-3" style="width: 80vw">
+                    <div class="d-flex flex-row bg-black bg-opacity-25 m-2 rounded-3" style="width: 80vw">
                         <p class="px-2 pt-2 mt-1" style="font-family: 'Times New Roman', Times, serif" ><strong><%#Eval("ChapterNums")%></strong></p>
                         <p class="px-2 pt-2 mt-1" style="font-family: 'Times New Roman', Times, serif" ><strong><%#Eval("ChapterName")%></strong></p>                        
                 </ItemTemplate>
@@ -19,10 +19,11 @@
         </Columns>
     </asp:GridView>
     <formview>
-        <label for="chapterNum" >Nhập Chương: </label>
-        <input type="number" ID="chapterNum" runat="server" />
+        <label for="ChapterNum" >Nhập ID Chương: </label>
+        <input type="number" ID="ChapterNum" name="ChapterNum" />
 
         <asp:Button runat="server" Text="Xóa Truyện" ID="btn_delete" CssClass="btn btn-danger m-2" OnClick="btn_delete_Click" />
         
     </formview>
+    <label runat="server" id="message" ></label>
 </asp:Content>

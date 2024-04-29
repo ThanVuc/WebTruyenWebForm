@@ -12,16 +12,11 @@ namespace WebTruyen.AuthorView
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int logged = Convert.ToInt32(Session["logged"]);
-            if (logged == 0)
-            {
-                Response.Redirect("/login");
-            }
+            
 
-            var id = Request.RequestContext.RouteData.Values["id"];
-            if (id != null)
+            string id = Request.RequestContext.RouteData.Values["id"].ToString();
+            if (id != "")
             {
-                id = id.ToString();
                 _Connection connect = new _Connection();
                 connect.adapter.TableMappings.Add("Table", "Chapter");
                 connect.adapter.SelectCommand = new System.Data.SqlClient.SqlCommand($"select * from Chapter where StoryID={id}", connect.Connection);
@@ -40,6 +35,24 @@ namespace WebTruyen.AuthorView
 
         protected void btn_delete_Click(object sender, EventArgs e)
         {
+            var chapterID = Request.Form["ChapterNum"];
+
+            _Connection cnt = new _Connection();
+            cnt.Cmd.CommandText = "Delete from Chapter where ChapterID = @chapterID";
+            cnt.Cmd.Parameters.AddWithValue("@chapterID", chapterID);
+
+            int numsRow = cnt.Cmd.ExecuteNonQuery();
+
+            if (numsRow > 0)
+            {
+                message.InnerText = "Xóa Thành Công";
+                Page_Load(sender,e);
+            }
+            else
+            {
+                message.InnerText = "Không Tìm Thấy ID";
+            }
+            cnt.CloseConnect();
 
         }
     }

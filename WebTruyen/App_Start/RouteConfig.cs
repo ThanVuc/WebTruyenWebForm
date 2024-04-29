@@ -18,7 +18,7 @@ namespace WebTruyen
 
             routes.MapPageRoute("Index", "", "~/UserView/HomePage.aspx");
             routes.MapPageRoute("TypeOfStory", "Type", "~/UserView/TypeOfStory.aspx");
-            routes.MapPageRoute("ListStory", "ListStory", "~/UserView/ListStory.aspx");
+            routes.MapPageRoute("ListStory", "ListStory/{id}", "~/UserView/ListStory.aspx");
 
             routes.MapPageRoute("Content","detail/content/{id}","~/DetailView/Content.aspx");
             routes.MapPageRoute("Comment", "detail/comment/{id}", "~/DetailView/Comment.aspx");

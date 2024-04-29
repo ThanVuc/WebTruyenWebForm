@@ -33,15 +33,6 @@ namespace WebTruyen.AuthorView
         protected global::System.Web.UI.WebControls.GridView Grid_Chapter;
 
         /// <summary>
-        /// chapterNum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl chapterNum;
-
-        /// <summary>
         /// btn_delete control.
         /// </summary>
         /// <remarks>
@@ -49,5 +40,14 @@ namespace WebTruyen.AuthorView
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_delete;
+
+        /// <summary>
+        /// message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net;
 
 namespace WebTruyen.User
 {
@@ -44,6 +45,10 @@ namespace WebTruyen.User
                 //giá trị của user đang sử dụng
                 Session.Add("logged",1);
                 Session.Add("userID",userID);
+                Response.Cookies.Remove("userID");
+                HttpCookie c = new HttpCookie("userID", userID.ToString());
+                Response.Cookies.Add(c);
+                Response.Cookies["userID"].Expires = DateTime.Now.AddDays(1);
                 Response.Redirect("/");
             } else
             {

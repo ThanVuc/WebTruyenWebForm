@@ -7,11 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebTruyen
+namespace WebTruyen.UserView
 {
 
 
-    public partial class HomePage
+    public partial class TypeOfStory
     {
+
+        /// <summary>
+        /// GridView_Type control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView_Type;
     }
 }
