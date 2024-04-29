@@ -16,6 +16,7 @@
             width: 0;
             height: 0;
             font-size: 0;
+            line-height: 0;
         }
     .card-img-top{
         height: 100%;
@@ -62,7 +63,7 @@
                                       </div>
                                       <div class="card-body">
                                         <h5 class="card-title"><%# Eval("Title") %></h5>
-                                        <a href="#" class="btn btn-primary">Xem Thêm</a>
+                                        <a href="../detail/introduction/<%# Eval("StoryID") %>" class="btn btn-primary">Xem Thêm</a>
                                       </div>
                                     </div>
                                 </ItemTemplate>
