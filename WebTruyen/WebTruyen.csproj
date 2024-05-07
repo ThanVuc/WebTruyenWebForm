@@ -115,6 +115,7 @@
     <Content Include="DetailView\Comment.aspx" />
     <Content Include="DetailView\Content.aspx" />
     <Content Include="DetailView\Introduction.aspx" />
+    <Content Include="DetailView\MasterView.ascx" />
     <Content Include="DetailView\ListChapter.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Icon\1.txt" />
@@ -307,6 +308,13 @@
     </Compile>
     <Compile Include="DetailView\Introduction.aspx.designer.cs">
       <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\MasterView.ascx.cs">
+      <DependentUpon>MasterView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\MasterView.ascx.designer.cs">
+      <DependentUpon>MasterView.ascx</DependentUpon>
     </Compile>
     <Compile Include="DetailView\ListChapter.aspx.cs">
       <DependentUpon>ListChapter.aspx</DependentUpon>

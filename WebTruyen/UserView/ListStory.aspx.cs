@@ -15,7 +15,6 @@ namespace WebTruyen.UserView
         {
             int typeID = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
 
-            Response.Write(typeID);
             _Connection cnt = new _Connection();
 
             try

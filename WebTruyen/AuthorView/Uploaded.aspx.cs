@@ -22,7 +22,7 @@ namespace WebTruyen.AuthorView
 
             var sqlconnectstring = @"Data Source=localhost;
                          Initial Catalog=StoryDB;
-                         User ID=SA;Password=88888888";
+                         User ID=SA;Password=123";
             var connection = new SqlConnection(sqlconnectstring);
             connection.Open();
 

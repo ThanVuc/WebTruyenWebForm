@@ -51,6 +51,15 @@ namespace WebTruyen.DetailView
         protected global::System.Web.UI.HtmlControls.HtmlAnchor register;
 
         /// <summary>
+        /// MasterView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebTruyen.DetailView.IntroductView MasterView;
+
+        /// <summary>
         /// DetailMaster control.
         /// </summary>
         /// <remarks>
