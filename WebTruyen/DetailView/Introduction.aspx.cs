@@ -42,7 +42,7 @@ namespace WebTruyen.DetailView
                     _Author.AuthorID = reader.GetInt32(0);
                     _Author.Aliases = reader["Aliases"].ToString();
                     _Author.AuthorView = Convert.ToInt32(reader["AuthorView"]);
-                    _Author.AuthorAvartar = reader["AuthorAvartar"].ToString();
+                    _Author.AuthorAvatar = reader["AuthorAvatar"].ToString();
                 }
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace WebTruyen.DetailView
             {
                 cnt.CloseConnect();
             }
-            AuthorAvartar.Src = _Author.AuthorAvartar;
+            AuthorAvatar.Src = _Author.AuthorAvatar;
         }
     }
 }

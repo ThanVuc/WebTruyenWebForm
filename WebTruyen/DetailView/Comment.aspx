@@ -27,13 +27,13 @@
     <div class="tong">
         <div class="cha">
             <div class="left2">
-                <img src="./ImageCMT/1681362589263.jpg" alt="">
+                <img src="#" runat="server" id="Avatar" alt="">
             </div>
             <div class="right2">
-                <form runat="server">
+                <formview>
                     <input class="form-control ms-2" id="cmtInp" name="cmtInp" style="width: 70vw; height: 14vh" type="text"  />
                     <asp:Button ID="CommentSubmit" runat="server" BorderStyle="None" OnClick="CommentSubmit_Click" />
-                </form>
+                </formview>
                      <br>
                 <div class="noidung">
                     <asp:DataList CssClass="Comment" ID="CommentList" runat="server">

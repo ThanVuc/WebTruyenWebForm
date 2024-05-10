@@ -19,7 +19,21 @@ namespace WebTruyen.DetailView
             }
             else
             {
+                UserManage.InnerText = "Change Avatar";
                 logout.InnerText = "Logout";
+                var userID = Session["userID"];
+                _Connection cnt = new _Connection();
+
+                cnt.Cmd.CommandText = $"select AvatarUrl from StoryUser where UserID = {userID}";
+                try
+                {
+                    Avatar.Src = cnt.Cmd.ExecuteScalar().ToString();
+                }
+                catch
+                {
+                    Response.Redirect("/Error");
+                }
+                cnt.CloseConnect();
             }
         }
     }

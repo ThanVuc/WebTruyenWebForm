@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\authorview\\addnew.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:authorview\\addnew.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\userview\\usermanage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:userview\\usermanage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\detailview\\content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:detailview\\content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\userview\\usermanage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:userview\\usermanage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\detailview\\content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:detailview\\content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\userview\\home.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:userview\\home.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\userview\\home.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:userview\\home.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|d:\\kttmdt\\webtruyenwebform\\webtruyen\\model\\authormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAFE1A3-BA30-4770-96B4-227F765229FC}|WebTruyen.csproj|solutionrelative:model\\authormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedHeight": 278,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserManage.aspx.cs",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\UserManage.aspx.cs",
+              "RelativeDocumentMoniker": "UserView\\UserManage.aspx.cs",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\UserManage.aspx.cs",
+              "RelativeToolTip": "UserView\\UserManage.aspx.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAA5wCYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T09:41:42.248Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -35,39 +60,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddNew.aspx.cs",
-              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\AuthorView\\AddNew.aspx.cs",
-              "RelativeDocumentMoniker": "AuthorView\\AddNew.aspx.cs",
-              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\AuthorView\\AddNew.aspx.cs",
-              "RelativeToolTip": "AuthorView\\AddNew.aspx.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCAAAAANAAAA",
+              "Title": "UserManage.aspx",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\UserManage.aspx",
+              "RelativeDocumentMoniker": "UserView\\UserManage.aspx",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\UserManage.aspx",
+              "RelativeToolTip": "UserView\\UserManage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-10T09:55:03.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.Master.cs",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\Home.Master.cs",
+              "RelativeDocumentMoniker": "UserView\\Home.Master.cs",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\Home.Master.cs",
+              "RelativeToolTip": "UserView\\Home.Master.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBQAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:31:54.175Z",
+              "WhenOpened": "2024-05-10T09:53:57.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Content.aspx.cs",
-              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\DetailView\\content.aspx.cs",
-              "RelativeDocumentMoniker": "DetailView\\content.aspx.cs",
-              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\DetailView\\content.aspx.cs",
-              "RelativeToolTip": "DetailView\\content.aspx.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA5wDYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:18:46.884Z"
+              "Title": "Home.Master",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\Home.Master",
+              "RelativeDocumentMoniker": "UserView\\Home.Master",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\UserView\\Home.Master",
+              "RelativeToolTip": "UserView\\Home.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-10T09:53:38.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Content.aspx",
-              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\DetailView\\content.aspx",
-              "RelativeDocumentMoniker": "DetailView\\content.aspx",
-              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\DetailView\\content.aspx",
-              "RelativeToolTip": "DetailView\\content.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-09T16:27:45.26Z"
+              "DocumentIndex": 4,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T09:53:28.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthorModel.cs",
+              "DocumentMoniker": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\Model\\AuthorModel.cs",
+              "RelativeDocumentMoniker": "Model\\AuthorModel.cs",
+              "ToolTip": "D:\\KTTMDT\\WebTruyenWebForm\\WebTruyen\\Model\\AuthorModel.cs",
+              "RelativeToolTip": "Model\\AuthorModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T09:46:08.817Z",
+              "EditorCaption": ""
             }
           ]
         },

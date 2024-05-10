@@ -33,6 +33,24 @@ namespace WebTruyen.AuthorView
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// AuthorAvatar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage AuthorAvatar;
+
+        /// <summary>
+        /// Aliases control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Aliases;
+
+        /// <summary>
         /// addnew_btn control.
         /// </summary>
         /// <remarks>

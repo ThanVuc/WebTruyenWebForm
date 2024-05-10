@@ -30,7 +30,11 @@
     <form runat="server">
         <header >
             <div class="header">
-            <img src="#" class="logo" alt="Logo" />
+            <div>
+                <a runat="server" id="UserManage" href="/UserManage" style="margin-right: 10px; color: black;" ></a>
+                <img runat="server" style="width: 3vw; border-radius: 1vw" id="Avatar" class="logo" />
+            </div>
+            
             <div class="">
                 <uc1:Serch runat="server" id="Serch" />
             </div>

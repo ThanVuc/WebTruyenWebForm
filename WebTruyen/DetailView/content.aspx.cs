@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace WebTruyen.DetailView
 {
@@ -19,40 +13,47 @@ namespace WebTruyen.DetailView
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Nums = Convert.ToInt32(Request.QueryString["c"]);
-
-            var id = Request.RequestContext.RouteData.Values["id"].ToString();
-            if (Nums != null)
+            try
             {
-                _Connection cnt = new _Connection();
-                cnt.Cmd.CommandText = $"Select c.ChapterName, c.Content, s.Title from Chapter c, Story s where c.StoryID=s.StoryID and c.StoryID = {id} and ChapterNums = {Nums}";
+                Nums = Convert.ToInt32(Request.QueryString["c"]);
 
-                var reader = cnt.Cmd.ExecuteReader();
-                while (reader.Read())
+                var id = Request.RequestContext.RouteData.Values["id"].ToString();
+                backIntroduction.HRef = $"/detail/introduction/{id}";
+
+                if (Nums != null)
                 {
-                    ChapterName = reader["ChapterName"].ToString();
-                    Content = reader["Content"].ToString();
-                    StoryTitle = reader["Title"].ToString();
+                    _Connection cnt = new _Connection();
+                    cnt.Cmd.CommandText = $"Select c.ChapterName, c.Content, s.Title from Chapter c, Story s where c.StoryID=s.StoryID and c.StoryID = {id} and ChapterNums = {Nums}";
+
+                    var reader = cnt.Cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        ChapterName = reader["ChapterName"].ToString();
+                        Content = reader["Content"].ToString();
+                        StoryTitle = reader["Title"].ToString();
+                    }
+                    reader.Close();
+
+                    cnt.Cmd.CommandText = $"Select Max(ChapterNums) from Chapter Where StoryID = {id}";
+
+                    Total = Convert.ToInt32(cnt.Cmd.ExecuteScalar());
+                    cnt.CloseConnect();
                 }
-                reader.Close();
+                else
+                {
+                    Response.Redirect("/Error");
+                }
+                if (Nums > 1)
+                {
+                    prev.HRef = $"/detail/content/1?c={Nums - 1}";
+                }
 
-                cnt.Cmd.CommandText = $"Select Max(ChapterNums) from Chapter Where StoryID = {id}";
-
-                Total = Convert.ToInt32(cnt.Cmd.ExecuteScalar());
-
-                cnt.CloseConnect();
-            }
-            else
+                if (Nums < Total)
+                    next.HRef = $"/detail/content/1?c={Nums + 1}";
+            } catch
             {
                 Response.Redirect("/Error");
             }
-            if (Nums > 1)
-            {
-                prev.HRef = $"/detail/content/1?c={Nums-1}";
-            }
-            
-            if (Nums<Total)
-            next.HRef = $"/detail/content/1?c={Nums+1}";
         }
     }
 }

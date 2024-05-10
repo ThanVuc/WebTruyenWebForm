@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuỳ Kiếm Tiên Thần - Chương 4</title>
+    <title> <% Response.Write(StoryTitle); %> </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
@@ -90,7 +90,12 @@
 </head>
 <body>
 
-<a href="/">Back To Homes</a>
+<div style="display: flex; flex-direction: row; justify-content:space-between; padding: 10px">
+    <a href="/">Back To Homes</a>
+    <a runat="server" id="backIntroduction" >Back To Introduction</a>
+</div>
+
+
 <div class="RedirectPage" >
     <a runat="server" id="prev" >Previous</a>
     <a runat="server" id="next" >Next</a>
@@ -98,7 +103,7 @@
 
 <div class="container">
     <div class="header">
-        <h1> <% Response.Write(ChapterName); %> - Chương <% Response.Write(Nums); %> - <% Response.Write(StoryTitle); %> </h1>
+        <h1> <% Response.Write(StoryTitle); %> - Chương <% Response.Write(Nums); %> - <% Response.Write(ChapterName); %> </h1>
     </div>
 
     <div class="content">

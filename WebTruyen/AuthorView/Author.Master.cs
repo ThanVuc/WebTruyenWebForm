@@ -9,7 +9,6 @@ namespace WebTruyen.AuthorView
 {
     public partial class Site1 : System.Web.UI.MasterPage
     {
-        public string Aliases { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             int logged = Convert.ToInt32(Session["logged"]);
@@ -19,12 +18,29 @@ namespace WebTruyen.AuthorView
                 Response.Redirect("/login");
             }
 
-            //int userID = Convert.ToInt32(Session["userID"]);
-            //string id = Request.RequestContext.RouteData.Values["id"].ToString();
-            //_Connection cnt = new _Connection();
-            //cnt.Cmd.CommandText = $"Select Aliases from Author where AuthorID={id}";
-            //Aliases = cnt.Cmd.ExecuteScalar().ToString();
-            //cnt.CloseConnect();
+            try
+            {
+                int userID = Convert.ToInt32(Session["userID"]);
+                string id = Request.RequestContext.RouteData.Values["id"].ToString();
+                _Connection cnt = new _Connection();
+                cnt.Cmd.CommandText = $"Select Aliases, AuthorAvatar from Author where AuthorID={userID}";
+
+                var reader = cnt.Cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    Aliases.InnerText = reader["Aliases"].ToString();
+                    AuthorAvatar.Src = reader["AuthorAvatar"].ToString();
+                }
+
+                cnt.CloseConnect();
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+                //Response.Redirect("/Error");
+            }
+            
 
         }
 

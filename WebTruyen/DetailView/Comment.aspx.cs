@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebTruyen.User;
 
 namespace WebTruyen.DetailView
 {
@@ -17,6 +18,26 @@ namespace WebTruyen.DetailView
             int id = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
             try
             {
+                if (Session["logged"] != null)
+                {
+                    if (Convert.ToInt32(Session["logged"]) == 1)
+                    {
+                        var userID = Session["userID"];
+                        cnt = new _Connection();
+
+                        cnt.Cmd.CommandText = $"select AvatarUrl from StoryUser where UserID = {userID}";
+                        try
+                        {
+                            Avatar.Src = cnt.Cmd.ExecuteScalar().ToString();
+                        }
+                        catch
+                        {
+                            Response.Redirect("/Error");
+                        }
+                    }
+                }
+
+
                 cnt.Cmd.CommandText = $"select Content from Comment where StoryID={id}";
 
                 cnt.adapter.TableMappings.Add("comment","Comment");

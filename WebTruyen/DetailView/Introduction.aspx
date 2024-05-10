@@ -9,16 +9,10 @@
             </div>
         </div>
         <div class="right1">
-            <div class="anh">
-                <img runat="server" id="AuthorAvartar" src="" alt="">
-                <div class="chu">
-                    Khong
-                </div>
-
+            <div class="d-flex flex-column align-items-center pt-5 ">
+                <img style="width: 30%; height: auto" runat="server" id="AuthorAvatar" src="" alt="">
+                <p style="font-size: 20px; font-weight: 700; font-family: sans-serif" ><% Response.Write(_Author.Aliases); %></p>
             </div>
-            <br>
-            <br>
-            <p5 class="text-center" ><% Response.Write(_Author.Aliases); %></p5>
             <br>
             <br>
             <div class="duoi" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center" >

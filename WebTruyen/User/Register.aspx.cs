@@ -16,39 +16,45 @@ namespace WebTruyen.User
 
         protected void btn_Register_Click(object sender, EventArgs e)
         {
-            string userName = Request.Form["username"];
-            string password = Request.Form["password"];
-            string confirm = Request.Form["Confirm"];
-            string fullName = Request.Form["fullname"];
-            string birth = Request.Form["birth"];
-            if (password == confirm && password != "" && userName != "" && fullName!="")
+            if (ModelState.IsValid)
             {
-                _Connection cnt = new _Connection();
-
-                cnt.Cmd.CommandText = "select 1 from StoryUser where UserName = @UserName";
-                cnt.Cmd.Parameters.AddWithValue("@UserName", userName);
-                if (cnt.Cmd.ExecuteScalar() != null)
+                string userName = Request.Form["username"];
+                string password = Request.Form["password"];
+                string confirm = Request.Form["Confirm"];
+                string fullName = Request.Form["fullname"];
+                string birth = Request.Form["birth"];
+                if (password == confirm && password != "" && userName != "" && fullName != "")
                 {
-                    Page_Load(sender, e);
-                    err.InnerText = "Trùng tên đăng nhập";
-                }
-                else
-                {
+                    _Connection cnt = new _Connection();
 
-                    cnt.Cmd.CommandText = "insert into StoryUser(UserName,UserPassword,FullName,DateOfBirth) values (@userName,@userPassword,@fullname,@birth)";
-                    cnt.Cmd.Parameters.AddWithValue("@userName", userName);
-                    cnt.Cmd.Parameters.AddWithValue("@userPassword", password);
-                    cnt.Cmd.Parameters.AddWithValue("@fullname", fullName);
-                    cnt.Cmd.Parameters.AddWithValue("@birth", birth);
-                    cnt.Cmd.ExecuteNonQuery();
-                    cnt.CloseConnect();
-                    Response.Redirect("/Login");
+                    try
+                    {
+                        cnt.Cmd.CommandText = "select 1 from StoryUser where UserName = @UserName";
+                        cnt.Cmd.Parameters.AddWithValue("@UserName", userName);
+                        if (cnt.Cmd.ExecuteScalar() != null)
+                        {
+                            Page_Load(sender, e);
+                            err.InnerText = "Trùng tên đăng nhập";
+                        }
+                        else
+                        {
+                            cnt.Cmd.CommandText = "insert into StoryUser(UserName,UserPassword,FullName,DateOfBirth,AvatarUrl) values (@userName1,@userPassword,@fullname,@birth,'..\\Image\\UserImg\\Default.png')";
+                            cnt.Cmd.Parameters.AddWithValue("@userName1", userName);
+                            cnt.Cmd.Parameters.AddWithValue("@userPassword", password);
+                            cnt.Cmd.Parameters.AddWithValue("@fullname", fullName);
+                            cnt.Cmd.Parameters.AddWithValue("@birth", birth);
+                            cnt.Cmd.ExecuteNonQuery();
+                            cnt.CloseConnect();
+                            Response.Redirect("/Login");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write(ex.Message);
+                        err.InnerText = "Đăng kí thất bại";
+                    }
                 }
-            } else
-            {
-                err.InnerText = "Đăng ký thất bại, vui lòng kiểm tra lại thông tin";
             }
-
         }
     }
 }

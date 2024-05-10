@@ -11,6 +11,6 @@ namespace WebTruyen.Model
         public int AuthorID { get; set; }
         public string Aliases { get; set; }
         public int AuthorView { get; set; }
-        public string AuthorAvartar { get; set; }
+        public string AuthorAvatar { get; set; }
     }
 }

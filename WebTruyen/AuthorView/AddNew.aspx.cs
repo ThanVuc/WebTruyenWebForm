@@ -11,6 +11,7 @@ namespace WebTruyen.AuthorView
 {
     public partial class Form_DangKiTruyen : System.Web.UI.Page
     {
+         
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -24,9 +25,19 @@ namespace WebTruyen.AuthorView
             _Story.Title = Request.Form["name"];
             _Story.Description = Request.Form["description"];
             _Story.AuthorID = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
+
             try
             {
-                cnt.Cmd.CommandText = $"insert into Story values ('{_Story.Title}','{_Story.Description}',0,{_Story.AuthorID},'')";
+                string url = "";
+                if (CoverImage.HasFile)
+                {
+                    string fileName = CoverImage.FileName;
+                    url = "../Image/StoryImg/" + fileName;
+                    string filePathObsolute = Server.MapPath("~/Image/StoryImg/" + fileName);
+                    CoverImage.SaveAs(filePathObsolute);
+                    Response.Write(url);
+                }
+                cnt.Cmd.CommandText = $"insert into Story values ('{_Story.Title}','{_Story.Description}',0,{_Story.AuthorID},'{url}')";
                 cnt.Cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
