@@ -7,47 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebTruyen.AuthorView
+namespace WebTruyen.UserView
 {
 
 
-    public partial class ListChapter
+    public partial class SerchStory
     {
 
         /// <summary>
-        /// message control.
+        /// announce control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl announce;
 
         /// <summary>
-        /// btn_delete control.
+        /// Type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_delete;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Type;
 
         /// <summary>
-        /// lb1 control.
+        /// GridView_ListStory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lb1;
-
-        /// <summary>
-        /// Grid_Chapter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Grid_Chapter;
+        protected global::System.Web.UI.WebControls.GridView GridView_ListStory;
     }
 }

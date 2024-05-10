@@ -7,29 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebTruyen.DetailView
+namespace WebTruyen.AuthorView
 {
 
 
-    public partial class content
+    public partial class CheckLog
     {
 
         /// <summary>
-        /// prev control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor prev;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// next control.
+        /// CreateAliase control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor next;
+        protected global::System.Web.UI.WebControls.Button CreateAliase;
     }
 }

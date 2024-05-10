@@ -13,5 +13,23 @@ namespace WebTruyen.DetailView
 
     public partial class Comment
     {
+
+        /// <summary>
+        /// CommentSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button CommentSubmit;
+
+        /// <summary>
+        /// CommentList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList CommentList;
     }
 }

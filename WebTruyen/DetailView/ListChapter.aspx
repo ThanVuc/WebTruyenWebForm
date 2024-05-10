@@ -1,18 +1,34 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/DetailView/Detail.Master" AutoEventWireup="true" CodeBehind="ListChapter.aspx.cs" Inherits="WebTruyen.DetailView.ListChapter" %>
 
-
 <asp:Content ContentPlaceHolderID="DetailMaster" runat="server" ID="gioithieu" >
+    <style>
+        .Chapter tbody{
+            width: 90%;
+            display: flex;
+            flex-direction: column
+        }
+        .Chapter tbody tr{
+            width: 100%;
+            margin-right: 10px;
+        }
+        .Chapter tbody tr td{
+            width: 74vw;
+        }
+        .Chapter tbody tr td a{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: start;
+        }
+
+    </style>
+
     <div class="container-fluid row" style="padding-left: 14%">
-        <a class="col-2 btn btn-secondary m-2" href="#">1. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">2. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">3. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">4. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">5. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">6. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">7. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">8. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">9. Bờ Biển Phía Tây</a>
-        <a class="col-2 btn btn-secondary m-2" href="#">10. Bờ Biển Phía Tây</a>
+        <asp:DataList ID="ChapterList" runat="server" CssClass="Chapter" >
+            <ItemTemplate>
+                <a href="/detail/content/<%# Eval("StoryID") %>?c=<%# Eval("ChapterNums") %>" class="btn btn-secondary m-2 w-100" ><%# Eval("ChapterNums") %>.  <%# Eval("ChapterName") %></a>
+            </ItemTemplate>
+        </asp:DataList>
     </div>
     <hr />
     <br />

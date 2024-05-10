@@ -7,29 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebTruyen.DetailView
+namespace WebTruyen.UserView
 {
 
 
-    public partial class content
+    public partial class Serch
     {
 
         /// <summary>
-        /// prev control.
+        /// SerchBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor prev;
-
-        /// <summary>
-        /// next control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor next;
+        protected global::System.Web.UI.WebControls.Button SerchBtn;
     }
 }

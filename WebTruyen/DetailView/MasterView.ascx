@@ -1,10 +1,21 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MasterView.ascx.cs" Inherits="WebTruyen.DetailView.IntroductView" %>
 
-<form id="MasterViewForm" runat="server" >
+<style>
+    tbody{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    tbody tr{
+        margin-bottom: 2%;
+    }
+</style>
+
+<form id="MasterViewForm">
     <div class="content">
         <div class="tren container">
             <div class="left">
-                <img runat="server" id="IntroductImage" src="" alt="">
+                <img runat="server" id="IntroductImage" alt="">
             </div>
             <div class="right">
             <div class="tieude">
@@ -12,12 +23,13 @@
                     <% Response.Write(_Story.Title); %>
                 </a1>
             </div>
+
             <br>
-            <a href="#">Quần Ngọc Sơn Đầu Kiếm</a>
-            <a href="#">Đang Ra</a>
-            <a href="#">Huyền Huyễn</a>
-            <a href="#">Điềm Đạm</a>
-            <a href="#">TXuyên Qua</a>
+                <asp:DataList ID="ListType" runat="server">
+                    <ItemTemplate>
+                        <a href="/liststory/<%# Eval("TypeID") %>" ><%# Eval("TypeName") %></a>
+                    </ItemTemplate>
+                </asp:DataList>
             <br>
 
             <br>
@@ -42,16 +54,16 @@
             </div>
             <br>
             <div class="doctruyen">
-                <a href="#" >
+                <a runat="server" id="ReadBook" >
                     Đọc Truyện
                 </a>
             </div>
             <br>
             <br>
             <div class="cmt">
-                <a href="#">Giới Thiệu</a>
-                <a href="#">Danh Sách Chương</a>
-                <a href="#">Bình Luận</a>
+                <a runat="server" id="Introduction_Link" >Giới Thiệu</a>
+                <a runat="server" id="ListChapter_Link" >Danh Sách Chương</a>
+                <a runat="server" id="Comment_Link" >Bình Luận</a>
             </div>
         </div>
         </div>

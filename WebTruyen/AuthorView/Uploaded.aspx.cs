@@ -15,6 +15,7 @@ namespace WebTruyen.AuthorView
         {
 
             int logged = Convert.ToInt32(Session["logged"]);
+            int userID = Convert.ToInt32(Session["userID"]);
             if (logged == 0)
             {
                 Response.Redirect("/login");
@@ -34,7 +35,7 @@ namespace WebTruyen.AuthorView
             adapter.TableMappings.Add("Table", "Story");
 
             // SelectCommand - Thực thi khi gọi Fill lấy dữ liệu về DataSet
-            adapter.SelectCommand = new SqlCommand(@"SELECT * FROM Story", connection);
+            adapter.SelectCommand = new SqlCommand($"SELECT * FROM Story Where AuthorID={userID}", connection);
 
             DataSet dataSet = new DataSet();
 

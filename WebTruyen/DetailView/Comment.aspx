@@ -1,31 +1,50 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/DetailView/Detail.Master" CodeBehind="Comment.aspx.cs" Inherits="WebTruyen.DetailView.Comment" %>
 
+<asp:Content ContentPlaceHolderID="head" runat="server" ID="Head1" >
+    <style>
+        .Comment tbody{
+            width: 90%;
+            display: flex;
+            flex-direction: column
+        }
+        .Comment tbody tr{
+            width: 100%;
+            margin-right: 10px;
+        }
+        .Comment tbody tr td{
+            width: 74vw;
+        }
+        .Comment tbody tr td a{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: start;
+        }
+    </style>
+</asp:Content>
+
 <asp:Content ContentPlaceHolderID="DetailMaster" runat="server" ID="Commnet" >
     <div class="tong">
-    <div class="cha">
-        <div class="left2">
-            <img src="./ImageCMT/1681362589263.jpg" alt="">
-        </div>
-        <div class="right2">
-            <form method="post">
-                <input class="form-control ms-2" style="width: 70vw; height: 14vh" type="text"  />
-            </form>
+        <div class="cha">
+            <div class="left2">
+                <img src="./ImageCMT/1681362589263.jpg" alt="">
+            </div>
+            <div class="right2">
+                <form runat="server">
+                    <input class="form-control ms-2" id="cmtInp" name="cmtInp" style="width: 70vw; height: 14vh" type="text"  />
+                    <asp:Button ID="CommentSubmit" runat="server" BorderStyle="None" OnClick="CommentSubmit_Click" />
+                </form>
+                     <br>
+                <div class="noidung">
+                    <asp:DataList CssClass="Comment" ID="CommentList" runat="server">
+                        <ItemTemplate>
+                            <p2><%# Eval("content") %></p2>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </div>
             
+            </div>
         </div>
-        
     </div>
-    <br>
-    <br>
-    <div class="noidung">
-        
-        <br>
-        <p2>fff</p2>
-        <br>
-        <p3>fff</p3>
-        <br>
-        <p4>fff</p4>
-        <br>
-        <p5>vxd</p5>
-    </div>
-        </div>
+
 </asp:Content>

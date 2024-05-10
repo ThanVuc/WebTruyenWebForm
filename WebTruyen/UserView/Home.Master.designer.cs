@@ -24,6 +24,24 @@ namespace WebTruyen
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
+        /// Serch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebTruyen.UserView.Serch Serch;
+
+        /// <summary>
+        /// upload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor upload;
+
+        /// <summary>
         /// logout control.
         /// </summary>
         /// <remarks>

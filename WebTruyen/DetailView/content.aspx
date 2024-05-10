@@ -15,7 +15,7 @@
             padding: 0;
         }
         .container {
-            width: 500%;
+            width: 90vw;
             max-width: 1300px;
             margin: 20px auto;
             background-color: hsl(0, 14%, 96%); /* Đổi màu nền thành màu xám */
@@ -35,7 +35,7 @@
             margin: 0;
         }
         .content {
-            width: 100%; /* Kéo rộng ô nội dung ra hết màn hình */
+            width: 96%; /* Kéo rộng ô nội dung ra hết màn hình */
             padding: 20px;
             line-height: 1.6;
         }
@@ -78,37 +78,36 @@
             font-size: 24px;
             cursor: pointer;
         }
+        .RedirectPage{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            color: black;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
 
+<a href="/">Back To Homes</a>
+<div class="RedirectPage" >
+    <a runat="server" id="prev" >Previous</a>
+    <a runat="server" id="next" >Next</a>
+</div>
+
 <div class="container">
     <div class="header">
-        <h1>Tuỳ Kiếm Tiên Thần - Chương 4</h1>
+        <h1> <% Response.Write(ChapterName); %> - Chương <% Response.Write(Nums); %> - <% Response.Write(StoryTitle); %> </h1>
     </div>
 
     <div class="content">
-        <p>Đại Hoang kiếm môn đệ tử Cố Cửu Thanh trong giấc mộng, hắn mộng thấy chính mình trở thành thế giới võ cấp cao 1 vị lão sư.</p>
+        <p style="word-wrap: anywhere" ><% Response.Write(Content); %></p>
     </div>
 
     <div class="footer">
         <!-- Không có gì ở đây -->
     </div>
-</div>
-
-<!-- Phần icon ở góc phải trên màn hình -->
-<div class="top-icons">
-    <i class="fas fa-list"></i>
-    <i class="fas fa-cog"></i>
-    <i class="fas fa-arrow-left"></i>
-    <i class="fas fa-exclamation-circle"></i> <!-- Thay đổi từ tam giác thành hình tròn -->
-</div>
-
-<!-- Phần icon ở góc phải dưới màn hình -->
-<div class="bottom-icons">
-    <i class="fas fa-heart"></i>
-    <i class="fas fa-save"></i>
-    <i class="fas fa-comment"></i>
 </div>
 
 </body>

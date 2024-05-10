@@ -15,15 +15,6 @@ namespace WebTruyen.DetailView
     {
 
         /// <summary>
-        /// MasterViewForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm MasterViewForm;
-
-        /// <summary>
         /// IntroductImage control.
         /// </summary>
         /// <remarks>
@@ -31,5 +22,50 @@ namespace WebTruyen.DetailView
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage IntroductImage;
+
+        /// <summary>
+        /// ListType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList ListType;
+
+        /// <summary>
+        /// ReadBook control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor ReadBook;
+
+        /// <summary>
+        /// Introduction_Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Introduction_Link;
+
+        /// <summary>
+        /// ListChapter_Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor ListChapter_Link;
+
+        /// <summary>
+        /// Comment_Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Comment_Link;
     }
 }

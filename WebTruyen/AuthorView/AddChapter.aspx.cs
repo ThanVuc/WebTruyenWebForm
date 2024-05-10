@@ -17,10 +17,24 @@ namespace WebTruyen.AuthorView
                 Response.Redirect("/login");
             }
         }
-
-        protected void btn_delete_Click(object sender, EventArgs e)
+        protected void AddChapterBtn_Click(object sender, EventArgs e)
         {
+            var num = Request.Form["Nums"];
+            var title = Request.Form["title"];
+            var content = Request.Form["content"];
+            var storyID = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
 
+            _Connection cnt = new _Connection();
+            cnt.Cmd.CommandText = $"insert into Chapter values (N'{title}',N'{content}',{num},{storyID})";
+
+            int check = cnt.Cmd.ExecuteNonQuery();
+            if (check > 0)
+            {
+                message.InnerText = "Thêm thành công";
+            } else
+            {
+                message.InnerText = "Thêm thất bại";
+            }
         }
     }
 }

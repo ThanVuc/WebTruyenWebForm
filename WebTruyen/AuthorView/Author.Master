@@ -17,9 +17,10 @@
         <div>
             <div class="row">
                 <div class="col-2 bg-info bg-opacity-25 height: 100vh d-flex flex-column"> 
-                    <h3 class="mx-auto mt-2">Tác Giả</h3>
+                    <h3 class="mx-auto mt-2"><% Response.Write(Aliases); %></h3>
                     <asp:Button CssClass="btn btn-secondary mx-1 mt-3 mb-4" ID="addnew_btn" runat="server" Text="Thêm Mới" OnClick="addnew_btn_Click" />
-                    <asp:Button CssClass="btn btn-secondary mx-1" ID="uploaded_btn" runat="server" Text="Đã Đăng" OnClick="uploaded_btn_Click" />        
+                    <asp:Button CssClass="btn btn-secondary mx-1 mt-3 mb-4" ID="uploaded_btn" runat="server" Text="Đã Đăng" OnClick="uploaded_btn_Click" />
+                    <a class="btn btn-secondary mx-1" href="/" >Go Back Home</a>        
                 </div>
                 <div class="col-10" style="height: 100vh">
                     <asp:ContentPlaceHolder ID="AuthorContent" runat="server"></asp:ContentPlaceHolder>

@@ -104,6 +104,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AuthorView\AddChapter.aspx" />
+    <Content Include="AuthorView\CheckLoggin.aspx" />
     <Content Include="AuthorView\Edit.aspx" />
     <Content Include="AuthorView\ListChapter.aspx" />
     <Content Include="AuthorView\Uploaded.aspx" />
@@ -119,6 +120,8 @@
     <Content Include="DetailView\ListChapter.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Icon\1.txt" />
+    <Content Include="Image\AuthorImg\DaoVang.jpg" />
+    <Content Include="Image\AuthorImg\HuongDuong.jpg" />
     <Content Include="Image\LogoImg\1.txt" />
     <Content Include="Image\StoryImg\anhdaidien.jpg" />
     <Content Include="Contact.aspx" />
@@ -206,6 +209,8 @@
     <Content Include="UserView\Home.Master" />
     <Content Include="UserView\HomePage.aspx" />
     <Content Include="UserView\ListStory.aspx" />
+    <Content Include="UserView\Serch.ascx" />
+    <Content Include="UserView\SerchStory.aspx" />
     <Content Include="UserView\TypeOfStory.aspx" />
     <Content Include="User\login.css" />
     <Content Include="User\Login.aspx" />
@@ -238,6 +243,13 @@
     </Compile>
     <Compile Include="AuthorView\Author.Master.designer.cs">
       <DependentUpon>Author.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorView\CheckLoggin.aspx.cs">
+      <DependentUpon>CheckLoggin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthorView\CheckLoggin.aspx.designer.cs">
+      <DependentUpon>CheckLoggin.aspx</DependentUpon>
     </Compile>
     <Compile Include="AuthorView\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
@@ -333,6 +345,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\AuthorModel.cs" />
+    <Compile Include="Model\ChapterModel.cs" />
+    <Compile Include="Model\CommentModel.cs" />
+    <Compile Include="Model\StoryModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserView\Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
@@ -361,6 +377,20 @@
     </Compile>
     <Compile Include="UserView\ListStory.aspx.designer.cs">
       <DependentUpon>ListStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\Serch.ascx.cs">
+      <DependentUpon>Serch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\Serch.ascx.designer.cs">
+      <DependentUpon>Serch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\SerchStory.aspx.cs">
+      <DependentUpon>SerchStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserView\SerchStory.aspx.designer.cs">
+      <DependentUpon>SerchStory.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserView\TypeOfStory.aspx.cs">
       <DependentUpon>TypeOfStory.aspx</DependentUpon>

@@ -31,37 +31,38 @@
 
 </head>
 <body>
-    <header>
-        <div class="header">
-        <img src="#" class="logo" alt="Logo" />
-        <div class="searchBar">
-            <formview>
-                <input type="text" class="texSearchBar" />
-                <img src="#" class="searchIcon" />
-            </formview> 
-        </div>
+        <header>
+            <div class="header">
+            <img src="#" class="logo" alt="Logo" />
+            <div class="searchBar">
+                <formview>
+                    <input type="text" class="texSearchBar" />
+                    <img src="#" class="searchIcon" />
+                </formview> 
+            </div>
 
-        <div class="header3">
-            <a href="/login" runat="server" id="logout" ></a>
-            <a href="/login" class="login me-2" runat="server" id="login" ></a>
-            <a href="/register" class="register" runat="server" id="register" ></a>
-        </div>
-        </div>
-           <ul class="nav nav-tabs justify-content-center coller ">    
-           <li class="nav-item">
-             <a class="nav-link" href="/">Home</a>
-           </li>
+            <div class="header3">
+                <a href="/login" runat="server" id="logout" ></a>
+                <a href="/login" class="login me-2" runat="server" id="login" ></a>
+                <a href="/register" class="register" runat="server" id="register" ></a>
+            </div>
+            </div>
+               <ul class="nav nav-tabs justify-content-center coller ">    
+               <li class="nav-item">
+                 <a class="nav-link" href="/">Home</a>
+               </li>
    
-           <li class="nav-item">
-             <a class="nav-link" href="/Type">Tìm Truyện</a>
-           </li>
-        </ul>
-    </header>
+               <li class="nav-item">
+                 <a class="nav-link" href="/Type">Tìm Truyện</a>
+               </li>
+            </ul>
+        </header>
 
-    <uc1:MasterView runat="server" ID="MasterView" />
+        <uc1:MasterView runat="server" ID="MasterView" />
+
+        <div class="foot">
+            <asp:ContentPlaceHolder ID="DetailMaster" runat="server"></asp:ContentPlaceHolder>
+        </div>         
     
-    <div class="foot">
-        <asp:ContentPlaceHolder ID="DetailMaster" runat="server"></asp:ContentPlaceHolder>
-    </div>         
 </body>
 </html>

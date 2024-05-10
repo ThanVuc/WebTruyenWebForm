@@ -4,13 +4,13 @@
 <asp:Content ContentPlaceHolderID="DetailMaster" runat="server" ID="gioithieu" >
     <div class="content">
         <div class="left1">
-            <div class="noidung">
-                <p>fffffffffff</p>
+            <div class="noidung" style="background-color: antiquewhite; padding: 10px" >
+                <p style="font-size: 20px;" ><% Response.Write(_Story.Description); %></p>
             </div>
         </div>
         <div class="right1">
             <div class="anh">
-                <img src="./Image copy/1700121183334.jpg" alt="">
+                <img runat="server" id="AuthorAvartar" src="" alt="">
                 <div class="chu">
                     Khong
                 </div>
@@ -18,18 +18,14 @@
             </div>
             <br>
             <br>
-            <p5>Bumaka</p5>
+            <p5 class="text-center" ><% Response.Write(_Author.Aliases); %></p5>
             <br>
             <br>
-            <div class="duoi">
-                <p7>Số truyện </p7>
-                <p7>Số chương</p7>
-                <p7>Cấp</p7>
-                <br>
-                <br>
-                <p8> 23</p8>
-                <p8> 26,6k</p8>
-                <p8>1</p8>
+            <div class="duoi" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center" >
+                <div>
+                    <p7>Số Lượt Xem</p7>
+                    <p8> <% Response.Write(_Author.AuthorView); %> </p8>
+                </div>      
             </div>
 
 

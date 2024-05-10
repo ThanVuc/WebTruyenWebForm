@@ -6,50 +6,20 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebTruyen.Model;
 
 namespace WebTruyen.DetailView
 {
     public partial class IntroductView : System.Web.UI.UserControl
     {
-
-        public class StoryModel
-        {
-            public StoryModel()
-            {
-            }
-
-            public StoryModel(int storyID, string title, string description, int storyView, int authorID, string coverImageUrl)
-            {
-                StoryID = storyID;
-                this.Title = title;
-                Description = description;
-                StoryView = storyView;
-                AuthorID = authorID;
-                CoverImageUrl = coverImageUrl;
-            }
-
-
-
-            public int StoryID { get; set; }
-            public string Title { get; set; }
-            public string Description { get; set; }
-            public int StoryView { get; set; }
-            public int AuthorID { get; set; }
-            public string CoverImageUrl { get; set; }
-
-            public int NumsChapter { get; set; }
-
-        }
-
         public StoryModel _Story { get; set; } = new StoryModel();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             _Connection cnt = new _Connection();
+            int id = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
             try
             {
-                int id = Convert.ToInt32(Request.RequestContext.RouteData.Values["id"]);
-
                 cnt.Cmd.CommandText = $"Select * from StoryDetail where StoryID = {id}";
 
                 var reader =  cnt.Cmd.ExecuteReader();
@@ -63,6 +33,26 @@ namespace WebTruyen.DetailView
                             _Story.CoverImageUrl = reader["CoverImageUrl"].ToString();
                             _Story.NumsChapter = Convert.ToInt32(reader["NumsChapter"]);
                     }
+                reader.Close();
+                cnt.Cmd.CommandText = "dbo.GetTypeByStory";
+                cnt.Cmd.CommandType = CommandType.StoredProcedure;
+                cnt.Cmd.Parameters.Add(
+                        new SqlParameter()
+                        {
+                            ParameterName = "@id",
+                            SqlDbType = SqlDbType.Int,
+                            SqlValue = _Story.StoryID
+                        }
+                    );
+
+                cnt.adapter.TableMappings.Add("Type","TypeOfStory");
+                cnt.adapter = new SqlDataAdapter(cnt.Cmd);
+
+                DataTable dt = new DataTable();
+                cnt.adapter.Fill(dt);
+
+                ListType.DataSource = dt;
+                ListType.DataBind();
 
             }
             catch (Exception ex)
@@ -73,6 +63,11 @@ namespace WebTruyen.DetailView
                 cnt.CloseConnect();
             }
             IntroductImage.Src = _Story.CoverImageUrl;
+            Introduction_Link.HRef = $"/detail/introduction/{_Story.StoryID}";
+            ListChapter_Link.HRef = $"/detail/listchapter/{_Story.StoryID}";
+            Comment_Link.HRef = $"/detail/comment/{_Story.StoryID}";
+            ReadBook.HRef = $"/detail/content/{_Story.StoryID}?c=1";
+            
         }
     }
 }
