@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net;
+using System.Web.Security;
 
 namespace WebTruyen.User
 {
@@ -28,10 +29,11 @@ namespace WebTruyen.User
         {
             var user = Request.Form["user"];
             var password = Request.Form["password"];
+            string encodePassword = FormsAuthentication.HashPasswordForStoringInConfigFile(password,"SHA1");
             _Connection cnt = new _Connection();
             cnt.Cmd.CommandText = "Select * from StoryUser Where UserName = @username and UserPassword = @userpassword";
             cnt.Cmd.Parameters.AddWithValue("@username",user);
-            cnt.Cmd.Parameters.AddWithValue("@userpassword", password);
+            cnt.Cmd.Parameters.AddWithValue("@userpassword", encodePassword);
             var reader = cnt.Cmd.ExecuteReader();
             int? userID = null;
             

@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/DetailView/Detail.Master" CodeBehind="Comment.aspx.cs" Inherits="WebTruyen.DetailView.Comment" %>
 
+<%@ Register Src="~/DetailView/CommentForm.ascx" TagPrefix="uc1" TagName="CommentForm" %>
+
+
 <asp:Content ContentPlaceHolderID="head" runat="server" ID="Head1" >
     <style>
         .Comment tbody{
@@ -23,7 +26,7 @@
     </style>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="DetailMaster" runat="server" ID="Commnet" >
+<asp:Content ContentPlaceHolderID="DetailMaster" runat="server" ID="Comment" >
     <div class="tong">
         <div class="cha">
             <div class="left2">
@@ -32,7 +35,7 @@
             <div class="right2">
                 <formview>
                     <input class="form-control ms-2" id="cmtInp" name="cmtInp" style="width: 70vw; height: 14vh" type="text"  />
-                    <asp:Button ID="CommentSubmit" runat="server" BorderStyle="None" OnClick="CommentSubmit_Click" />
+                    <asp:Button ID="CommentSubmitBtn" runat="server" BorderStyle="None" OnClick="CommentSubmitBtn_Click" />
                 </formview>
                      <br>
                 <div class="noidung">

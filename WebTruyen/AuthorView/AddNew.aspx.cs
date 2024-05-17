@@ -35,7 +35,6 @@ namespace WebTruyen.AuthorView
                     url = "../Image/StoryImg/" + fileName;
                     string filePathObsolute = Server.MapPath("~/Image/StoryImg/" + fileName);
                     CoverImage.SaveAs(filePathObsolute);
-                    Response.Write(url);
                 }
                 cnt.Cmd.CommandText = $"insert into Story values ('{_Story.Title}','{_Story.Description}',0,{_Story.AuthorID},'{url}')";
                 cnt.Cmd.ExecuteNonQuery();

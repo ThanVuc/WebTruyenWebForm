@@ -38,8 +38,9 @@
             <div class="header">
              <div>
                  <a runat="server" id="UserManage" href="/UserManage" style="margin-right: 10px; color: black;" ></a>
-                 <img runat="server" style="width: 3vw; border-radius: 1vw" id="Avatar" class="logo" />
+                 <img src="#" runat="server" style="width: 3vw; border-radius: 1vw" id="Avatar" class="logo" />
              </div>
+
             <div runat="server" class="">
                 <uc1:Serch runat="server" ID="Serch" />    
             </div>

@@ -114,6 +114,7 @@
     <Content Include="Css\DetailCss\Detail.css" />
     <Content Include="Css\DetailCss\Introduction.css" />
     <Content Include="DetailView\Comment.aspx" />
+    <Content Include="DetailView\CommentForm.ascx" />
     <Content Include="DetailView\Content.aspx" />
     <Content Include="DetailView\Introduction.aspx" />
     <Content Include="DetailView\MasterView.ascx" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="DetailView\Comment.aspx.designer.cs">
       <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailView\CommentForm.ascx.cs">
+      <DependentUpon>CommentForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailView\CommentForm.ascx.designer.cs">
+      <DependentUpon>CommentForm.ascx</DependentUpon>
     </Compile>
     <Compile Include="DetailView\Content.aspx.cs">
       <DependentUpon>Content.aspx</DependentUpon>

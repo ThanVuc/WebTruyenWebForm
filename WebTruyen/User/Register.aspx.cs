@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -25,6 +26,7 @@ namespace WebTruyen.User
                 string birth = Request.Form["birth"];
                 if (password == confirm && password != "" && userName != "" && fullName != "")
                 {
+                    string encodePassword = FormsAuthentication.HashPasswordForStoringInConfigFile(password,"SHA1");
                     _Connection cnt = new _Connection();
 
                     try
@@ -40,7 +42,7 @@ namespace WebTruyen.User
                         {
                             cnt.Cmd.CommandText = "insert into StoryUser(UserName,UserPassword,FullName,DateOfBirth,AvatarUrl) values (@userName1,@userPassword,@fullname,@birth,'..\\Image\\UserImg\\Default.png')";
                             cnt.Cmd.Parameters.AddWithValue("@userName1", userName);
-                            cnt.Cmd.Parameters.AddWithValue("@userPassword", password);
+                            cnt.Cmd.Parameters.AddWithValue("@userPassword", encodePassword);
                             cnt.Cmd.Parameters.AddWithValue("@fullname", fullName);
                             cnt.Cmd.Parameters.AddWithValue("@birth", birth);
                             cnt.Cmd.ExecuteNonQuery();
